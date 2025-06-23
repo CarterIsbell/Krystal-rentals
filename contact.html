@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Krystal's Bouncy House Rentals</title>
+  <title>Our Rentals - Krystal's Bouncy House Rentals</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,27 +19,110 @@
   </header>
 
   <section class="intro">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or special requests, feel free to reach out!</p>
+    <h2>Our Bouncy Houses</h2>
+    <p>Explore our available units and request a rental below.</p>
   </section>
 
-  <section class="contact-form">
-    <form action="https://formspree.io/f/mjkraopr" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
+  <section class="rentals-grid">
+    <!-- Purple Palm Slide -->
+    <div class="rental-card">
+      <img src="images/Slide1.png" alt="Purple Palm Slide - dimensions" />
+      <img src="images/Slide2.png" alt="Purple Palm Slide with person" />
+      <h3>Purple Palm Slide</h3>
+      <p>Fun for all ages with a bright tropical design and splash pool.</p>
+      <p class="price">$250/day</p>
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required />
+      <div class="calendar">
+        <h4>Availability Calendar</h4>
+        <iframe src="https://calendar.google.com/calendar/embed?src=281b20e694c0213ea37b1a04a0ff54b99df26dd3740a2f9177b607ceb50aa333%40group.calendar.google.com&ctz=America%2FChicago"
+          style="border: 0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+      </div>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <form action="https://formspree.io/f/mjkraopr" method="POST" class="embedded-form">
+        <input type="hidden" name="_subject" value="Purple Palm Slide Request" />
 
-      <button type="submit" class="button">Send Message</button>
-    </form>
+        <p><strong>Note:</strong> Submitting this request does not guarantee availability. You’ll receive a confirmation email if your requested dates are open.</p>
+
+        <label for="date-castle">Preferred Start Date:</label>
+        <input type="date" id="date-castle" name="Start Date" required />
+
+        <label for="end-castle">Preferred End Date:</label>
+        <input type="date" id="end-castle" name="End Date" required />
+
+        <label for="name-castle">Your Name:</label>
+        <input type="text" id="name-castle" name="Name" required />
+
+        <label for="email-castle">Your Email:</label>
+        <input type="email" id="email-castle" name="Email" required />
+        <label for="phone-castle">Your Phone Number:</label>
+        <input type="tel" id="phone-castle" name="Phone" required />
+
+
+        <label>
+          <input type="checkbox" name="Delivery Requested" />
+          I would like delivery (fee TBD)
+        </label>
+
+        <label>
+          <input type="checkbox" name="Understands Policy" required />
+          I understand this request is pending approval
+        </label>
+
+        <button type="submit" class="button">Request This Rental</button>
+      </form>
+    </div>
+
+    <!-- Blue Wave Slide -->
+    <div class="rental-card">
+      <img src="images/Slide3.png" alt="Blue Wave Slide" />
+      <img src="images/Slide4.png" alt="Blue Wave Slide - dimensions" />
+      <h3>Blue Wave Slide</h3>
+      <p>Water-themed inflatable with slide, climb, and splash zone.</p>
+      <p class="price">$300/day</p>
+
+      <div class="calendar">
+        <h4>Availability Calendar</h4>
+        <iframe src="https://calendar.google.com/calendar/embed?src=7ba7a417c10b32712e18788763cb4e2cd79352ebb88ed246e06f12e55a605171%40group.calendar.google.com&ctz=America%2FChicago"
+          style="border: 0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <form action="https://formspree.io/f/mjkraopr" method="POST" class="embedded-form">
+        <input type="hidden" name="_subject" value="Blue Wave Slide Request" />
+
+        <p><strong>Note:</strong> Submitting this request does not guarantee availability. You’ll receive a confirmation email if your requested dates are open.</p>
+
+        <label for="date-combo">Preferred Start Date:</label>
+        <input type="date" id="date-combo" name="Start Date" required />
+
+        <label for="end-combo">Preferred End Date:</label>
+        <input type="date" id="end-combo" name="End Date" required />
+
+        <label for="name-combo">Your Name:</label>
+        <input type="text" id="name-combo" name="Name" required />
+
+        <label for="email-combo">Your Email:</label>
+        <input type="email" id="email-combo" name="Email" required />
+        <label for="phone-castle">Your Phone Number:</label>
+        <input type="tel" id="phone-castle" name="Phone" required />
+
+
+        <label>
+          <input type="checkbox" name="Delivery Requested" />
+          I would like delivery (fee TBD)
+        </label>
+
+        <label>
+          <input type="checkbox" name="Understands Policy" required />
+          I understand this request is pending approval
+        </label>
+
+        <button type="submit" class="button">Request This Rental</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Slide with Montalvo. All rights reserved.</p>
+    <p>&copy; 2025 Slide with Montalvo. All rights reserved. </p>
   </footer>
 </body>
 </html>
